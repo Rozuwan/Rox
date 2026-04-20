@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/Rox/fav/fav.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ROX</title>
+  <script type="module" crossorigin src="/Rox/assets/main-DTwuWKBM.js"></script>
+  <link rel="stylesheet" crossorigin href="/Rox/assets/main-mPfkf0LS.css">
+</head>
+
+<body class="bg-bg pt-20">
+    <!-- nav bar start -->
+  <header>
+    <nav class="bg-surface/60 backdrop-blur-lg border-b border-border fixed w-full z-20 top-0 start-0">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-6 py-2">
+
+        <!-- LOGO -->
+        <a href="/" class="flex items-center">
+          <img src="./logo/logo.png" class="h-10" alt="Rox Logo" />
+        </a>
+
+        <!-- search bar -->
+        <form class="order-3 w-full mt-3 md:order-0 md:mt-0 md:flex-1 md:max-w-xl md:mx-6 ">
+          <label for="search" class="sr-only">Search</label>
+
+          <div class="relative group">
+            <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+              <i data-lucide="search"
+                class="size-4 text-secondary group-focus-within:text-accent transition-colors"></i>
+            </div>
+
+            <input type="search" id="search"
+              class="block w-full py-3 ps-10 pe-4 text-sm text-primary border border-border rounded-xl bg-surface focus:ring-2 focus:ring-accent/20 focus:border-accent transition-all outline-none placeholder:text-secondary"
+              placeholder="Search for sites..." />
+          </div>
+        </form>
+
+        <!-- hamburger menu -->
+        <button data-collapse-toggle="navbar-default" type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-secondary rounded-lg md:hidden hover:bg-surface focus:outline-none focus:ring-2 focus:ring-border"
+          aria-controls="navbar-default" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <i data-lucide="menu" class="size-6"></i>
+        </button>
+
+        <!-- navigation links -->
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="font-bold flex flex-col p-4 md:p-0 mt-4 border border-border rounded-lg md:flex-row md:items-center md:space-x-8 md:mt-0 md:border-0 md:bg-transparent">
+            <li>
+              <a href="index.html" class="block py-2 px-3 text-primary rounded hover:bg-surface md:hover:bg-transparent md:hover:text-accent md:p-0">Home</a>
+            </li>
+            <li>
+              <a href="about.html"
+                class="block py-2 px-3 text-primary rounded hover:bg-surface md:hover:bg-transparent md:hover:text-accent md:p-0">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="dmca.html"
+                class="block py-2 px-3 text-accent md:p-0" aria-current="page">
+                DMCA
+              </a>
+            </li>
+            <!-- user profile popover -->
+            <li class="relative">
+              <button data-popover-target="popover-user-profile" type="button"
+                class="flex items-center justify-center w-9 h-9 bg-surface hover:bg-border text-primary rounded-full transition-colors">
+                <i data-lucide="heart" class="size-5"></i>
+              </button>
+              <div data-popover id="popover-user-profile" role="tooltip"
+                class="absolute z-10 invisible inline-block w-64 text-sm transition-opacity duration-300 bg-surface border border-border rounded-xl shadow-lg opacity-0">
+                <div class="p-4">
+                  <div class="flex items-center justify-between mb-3">
+                    <img class="w-10 h-10 rounded-full" src="./logo/pfp.jpg" alt="Profile">
+                    <a href="https://github.com/Rozuwan" target="_blank" rel="noopener"
+                      class="text-black bg-accent hover:bg-accent-hover font-medium rounded-lg text-xs px-4 py-1.5 transition-colors">
+                      Follow
+                    </a>
+                  </div>
+                  <div class="space-y-1">
+                    <p class="font-bold text-primary text-base">Rozuwan</p>
+                    <p class="text-secondary">@rozuwan</p>
+                  </div>
+                  <p class="mt-3 text-secondary leading-relaxed">
+                    Follow my GitHub and star the
+                    <a href="https://github.com/Rozuwan/Rox" target="_blank" class="text-accent hover:underline">
+                      rox
+                    </a>
+                    repo.
+                  </p>
+                </div>
+                <div data-popper-arrow></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- nav bar end -->
+    <!-- main start -->
+    <main class="max-w-5xl mx-auto px-4 md:px-6 py-12 space-y-12">
+
+        <!-- Title -->
+        <section class="text-center space-y-4">
+            <h1 class="text-4xl md:text-5xl font-bold text-primary
+               drop-shadow-[0_0_10px_rgba(189,147,249,0.8)]">
+                DMCA Policy
+            </h1>
+            <p class="text-secondary max-w-4xl mx-auto text-lg md:text-xl leading-relaxed">
+                We respect intellectual property rights and comply with the DMCA.<br>
+                Digital Millennium Copyright Act (DMCA)
+            </p>
+        </section>
+
+        <!-- Overview -->
+        <section class="relative bg-surface border border-border rounded-xl p-6 md:p-8 space-y-5 overflow-hidden mb-6">
+
+            <div class="absolute inset-0 opacity-10 bg-gradient-to-r from-accent via-transparent to-accent blur-xl">
+            </div>
+
+            <div class="relative">
+                <h2 class="text-2xl md:text-3xl font-semibold text-primary text-center mb-3">
+                    Important Notice
+                </h2>
+
+                <p class="text-secondary text-lg md:text-xl max-w-3xl mx-auto text-center leading-relaxed">
+                    ROX is a directory platform and does not host any content. All materials are provided by third-party
+                    sites.
+                </p>
+
+                <p class="text-secondary text-lg md:text-xl max-w-3xl mx-auto text-center leading-relaxed">
+                    If you believe content infringes your rights, you may submit a request for review.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- Process -->
+        <section class="space-y-6">
+
+            <h2 class="text-2xl md:text-3xl font-semibold text-primary text-center">
+                How It Works
+            </h2>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 ">
+
+                <div class="bg-surface border border-border rounded-xl p-5 text-center transition-all duration-300 ease-out hover:-translate-y-1.5  hover:border-accent hover:shadow-[inset_0_0_15px_rgba(189,147,249,0.35)] ">
+                    <p class="text-accent font-bold text-xl">1</p>
+                    <p class="text-secondary text-base">Review</p>
+                </div>
+
+                <div class="bg-surface border border-border rounded-xl p-5 text-center transition-all duration-300 ease-out hover:-translate-y-1.5  hover:border-accent hover:shadow-[inset_0_0_15px_rgba(189,147,249,0.35)] ">
+                    <p class="text-accent font-bold text-xl">2</p>
+                    <p class="text-secondary text-base">Verify</p>
+                </div>
+
+                <div class="bg-surface border border-border rounded-xl p-5 text-center transition-all duration-300 ease-out hover:-translate-y-1.5  hover:border-accent hover:shadow-[inset_0_0_15px_rgba(189,147,249,0.35)] ">
+                    <p class="text-accent font-bold text-xl">3</p>
+                    <p class="text-secondary text-base">Action</p>
+                </div>
+
+                <div class="bg-surface border border-border rounded-xl p-5 text-center transition-all duration-300 ease-out hover:-translate-y-1.5  hover:border-accent hover:shadow-[inset_0_0_15px_rgba(189,147,249,0.35)] ">
+                    <p class="text-accent font-bold text-xl">4</p>
+                    <p class="text-secondary text-base">Notify</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Requirements -->
+        <section class="bg-surface border border-border rounded-xl p-6 md:p-8 space-y-5 mb-6">
+
+            <h2 class="text-2xl md:text-3xl font-semibold text-primary text-center">
+                Requirements
+            </h2>
+
+            <ul class="space-y-3 text-secondary text-base md:text-lg max-w-3xl mx-auto leading-relaxed">
+                <li>• Description of copyrighted work</li>
+                <li>• Exact URL of infringing material</li>
+                <li>• Your contact information</li>
+                <li>• Good faith statement</li>
+                <li>• Accuracy statement</li>
+                <li>• Authorization confirmation</li>
+                <li>• Signature</li>
+            </ul>
+
+        </section>
+
+        <!-- Contact -->
+        <section
+            class="relative bg-surface border border-accent/30 rounded-xl p-6 md:p-8 text-center space-y-4 overflow-hidden">
+
+            <div class="absolute inset-0 opacity-10 bg-gradient-to-r from-accent via-transparent to-accent blur-xl">
+            </div>
+
+            <div class="relative">
+                <h2 class="text-2xl md:text-3xl font-semibold text-primary mb-6">
+                    Submit Request
+                </h2>
+
+                <p class="text-secondary text-lg">
+                    Send your DMCA notice to:
+                </p>
+
+                <p class="text-accent text-xl font-semibold
+                drop-shadow-[0_0_6px_rgba(189,147,249,0.6)]">
+                    <a href="https://discord.gg/Fhf9yfmpPa" target="_blank">Here</a>
+                </p>
+
+                <p class="text-secondary text-base max-w-2xl mx-auto">
+                    Valid requests will be reviewed and handled appropriately.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+    <!-- footer start -->
+    <footer class="mt-10 text-center text-sm text-secondary mb-10">
+        <div class="border-t border-border pt-4">
+            Made with <span class="text-accent">💜</span> by
+            <a href="https://github.com/Rozuwan" target="_blank" class="text-accent hover:underline">
+                Roxuwan
+            </a>
+            <p class="mt-1 text-xs text-secondary/70">
+                © 2024 ROX All rights reserved • Built with <span class="text-accent">Tailwind CSS</span>
+            </p>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+
+</body>
+
+</html>
