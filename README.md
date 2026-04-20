@@ -12,9 +12,7 @@ https://rozuwan.github.io/Rox/index.html
 
 ##  Preview
 
-<p align="center">
-  ![ROX Preview](public/images_logo/preview.png)
-</p>
+![ROX Preview](public/images_logo/preview.png)
 
 ---
 
