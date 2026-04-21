@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let activeCategory = "all";
 
-  // 🎯 CATEGORY BUTTON CLICK
+  // CATEGORY BUTTON CLICK
   buttons.forEach(btn => {
     btn.addEventListener("click", () => {
       activeCategory = btn.dataset.category;
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // 🔍 SEARCH
+  //  SEARCH
   if (searchInput) {
     searchInput.addEventListener("input", () => {
       const query = searchInput.value.toLowerCase().trim();
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // 🧠 CATEGORY LOGIC
+  // 🧠CATEGORY LOGIC
   function applyCategory(category) {
     sections.forEach(section => {
       const match =
@@ -80,11 +80,22 @@ const closeBtn = document.getElementById("closeNotify");
 // show after load
 window.addEventListener("load", () => {
   setTimeout(() => {
-    notify.classList.remove("opacity-0", "translate-y-[-20px]", "pointer-events-none");
+    notify.classList.remove("opacity-0", "-translate-y-4", "pointer-events-none");
+
+    // auto hide AFTER showing
+    setTimeout(() => {
+      notify.classList.add("opacity-0", "-translate-y-4", "pointer-events-none");
+    }, 4000);
+
   }, 500);
 });
 
-// close button
+// close button (desktop)
 closeBtn.addEventListener("click", () => {
-  notify.classList.add("opacity-0", "translate-y-[-20px]", "pointer-events-none");
+  notify.classList.add("opacity-0", "-translate-y-4", "pointer-events-none");
+});
+
+// tap anywhere to close (for mobile)
+notify.addEventListener("click", () => {
+  notify.classList.add("opacity-0", "-translate-y-4", "pointer-events-none");
 });

@@ -9,21 +9,25 @@
 </head>
 
 <body class="bg-bg pt-20">
-  <!-- 🔔 Floating Notification -->
-  <div id="notify"
-    class="fixed top-4 left-1/2 -translate-x-1/2 z-50
-         px-5 py-3 rounded-xl border border-border bg-surface/90 backdrop-blur-md shadow-[0_10px_30px_rgba(0,0,0,0.5),0_0_10px_rgba(189,147,249,0.2)] flex items-center gap-3 opacity-0 translate-y-[60px] pointer-events-none transition-all duration-500 ease-out">
+  <!-- Floating Notification -->
+<div id="notify"
+  class="fixed top-20 left-1/2 -translate-x-1/2 z-50
+  w-[92%] sm:w-auto sm:max-w-md md:max-w-lg
+  px-5 py-3 rounded-xl border border-border bg-surface/90 backdrop-blur-md
+  shadow-[0_10px_30px_rgba(0,0,0,0.5),0_0_10px_rgba(189,147,249,0.2)]
+  flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-3
+  opacity-0 -translate-y-4
+  pointer-events-none transition-all duration-500 ease-out">
 
-    <span class="text-accent text-lg">⚠️</span>
+  <p class="text-sm text-secondary text-center sm:text-left">
+    Use <span class="text-accent font-medium">Brave</span> or an ad-blocker for the best experience.
+  </p>
 
-    <p class="text-sm text-secondary">
-      Use <span class="text-accent font-medium">Brave</span> or an ad-blocker for the best experience.
-    </p>
-
-    <button id="closeNotify" class="ml-2 text-secondary hover:text-accent text-lg">
-      ✕
-    </button>
-  </div>
+  <button id="closeNotify"
+    class="hidden sm:block sm:ml-auto text-secondary hover:text-accent text-lg p-1">
+    ✕
+  </button>
+</div>
   <!-- nav bar start -->
   <header>
     <nav class="bg-surface/60 backdrop-blur-lg border-b border-border fixed w-full z-20 top-0 start-0">
@@ -125,7 +129,7 @@
         class="text-white bg-accent hover:bg-accent-hover font-medium rounded-lg text-sm px-5 py-2.5 transition-colors">
         Learn More
       </a>
-    </section>  
+    </section>
     <!-- hero section end -->
 
     <!-- category section start -->
