@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // 🧠CATEGORY LOGIC
+  // CATEGORY LOGIC
   function applyCategory(category) {
     sections.forEach(section => {
       const match =
